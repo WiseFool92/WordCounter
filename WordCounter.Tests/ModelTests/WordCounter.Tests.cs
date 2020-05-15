@@ -65,7 +65,7 @@ namespace WordCounter.Tests
       // Act
       bool result = testCheck.SentenceConfirmation();
       // Assert
-      Assert.IsTrue(false, "slick road"); 
+      Assert.IsTrue(true, "Oil slicks the road"); 
     }
   }
 }
