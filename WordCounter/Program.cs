@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using WordCounter.Model;
+using WordCounter.Models;
 
 namespace WordCounter
 {
@@ -10,7 +10,7 @@ namespace WordCounter
     {
       Start();
     }
-    
+
     public void Start()
     {
       bool play = true;
