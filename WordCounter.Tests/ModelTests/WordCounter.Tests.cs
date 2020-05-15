@@ -6,12 +6,18 @@ using WordCounter.Models;
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class ItemTests : IDisposable
+  public class RepeatCounterTests
   {
     [TestMethod]
-    public void Dispose()
+    public void Contain_WordCollection_Word()
     {
-      ItemTests.ClearAll();
+      // Arrange
+      string freshWord = "antelope";
+      RepeatCounter testCheck = new RepeatCounter(freshWord, "test");
+      // Act
+      string result = testCheck.Word;
+      //Assert
+      Assert.AreEqual(freshWord, "dog"); 
     }
   }
 }
