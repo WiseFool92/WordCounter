@@ -18,7 +18,7 @@ namespace WordCounter.Models
 
     public bool WordConfirmation()
     {
-      foreach (char letter in word)
+      foreach (char letter in Word)
       {
         if (char.IsDigit(letter))
         {
@@ -42,8 +42,8 @@ namespace WordCounter.Models
             return false;
           }
         }
-        return true;
       }
+      return true;
     }
   }
 }
