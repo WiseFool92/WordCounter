@@ -41,7 +41,7 @@ namespace WordCounter.Tests
       // Act
       bool result = testCheck.WordConfirmation();
       // Assert
-      Assert.IsTrue(result);
+      Assert.IsTrue(false, "Ogre");
     }
   }
 }
