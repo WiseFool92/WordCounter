@@ -19,5 +19,17 @@ namespace WordCounter.Tests
       //Assert
       Assert.AreEqual(freshWord, result); 
     }
+
+    [TestMethod]
+    public void Contain_SentenceCollection_Sentence()
+    {
+      // Arrange
+      string freshSentence = "How much wood could a wood chuck, chuck if a wood chuck could chuck wood?";
+      RepeatCounter testCheck = new RepeatCounter("test", freshSentence);
+      // Act
+      string result = testCheck.Sentence;
+      // Assert
+      Assert.AreEqual(freshSentence, "It needs more cowbell!");
+    }
   }
 }
