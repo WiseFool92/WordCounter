@@ -29,7 +29,7 @@ namespace WordCounter.Tests
       // Act
       string result = testCheck.Sentence;
       // Assert
-      Assert.AreEqual(freshSentence, "It needs more cowbell!");
+      Assert.AreEqual(freshSentence, result);
     }
   }
 }
