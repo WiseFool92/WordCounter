@@ -7,13 +7,11 @@ namespace WordCounter.Models
   {
     public string Word { get; set; }
     public string Sentence { get; set; }
-    public string ParseWord { get; set; }
-    public string ParsedSentence {get; set; }
     
     public RepeatCounter(string word, string sentence)
     {
-      Word = word;
-      Sentence = sentence;
+      Word = word.ToLower();
+      Sentence = sentence.ToLower();
     }
 
     public bool WordConfirmation()
@@ -44,6 +42,16 @@ namespace WordCounter.Models
         }
       }
       return true;
+    }
+
+    public int WordCount()
+    {
+      int count = 0;
+      if (Word == Sentence)
+      {
+        count += 1;
+      }
+      return count;
     }
   }
 }
