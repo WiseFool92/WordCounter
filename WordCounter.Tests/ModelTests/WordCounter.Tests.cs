@@ -17,7 +17,7 @@ namespace WordCounter.Tests
       // Act
       string result = testCheck.Word;
       //Assert
-      Assert.AreEqual(freshWord, "dog"); 
+      Assert.AreEqual(freshWord, result); 
     }
   }
 }
