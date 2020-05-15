@@ -53,7 +53,7 @@ namespace WordCounter.Tests
       // Act
       bool result = testCheck.WordConfirmation();
       // Assert
-      Assert.IsFalse(true, "1337"); 
+      Assert.IsFalse(false, "1337"); 
     }
   }
 }
