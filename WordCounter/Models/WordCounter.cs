@@ -15,9 +15,10 @@ namespace WordCounter.Models
       Word = word;
       Sentence = sentence;
     }
+
     public bool WordConfirmation()
     {
-      foreach (char letter in Word)
+      foreach (char letter in word)
       {
         if (char.IsDigit(letter))
         {
@@ -25,6 +26,24 @@ namespace WordCounter.Models
         }
       }
       return true;      
+    }
+
+    public bool SentenceConfirmation()
+    {
+      // Set array to hold all the words that are split from the sentence
+      string[] SplitSentence = Sentence.Split(" ");
+
+      foreach (string word in SplitSentence)
+      {
+        foreach (char letter in word)
+        {
+          if (char.IsDigit(letter))
+          {
+            return false;
+          }
+        }
+        return true;
+      }
     }
   }
 }

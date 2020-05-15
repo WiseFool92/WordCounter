@@ -55,5 +55,11 @@ namespace WordCounter.Tests
       // Assert
       Assert.IsFalse(false, "1337"); 
     }
+
+    [TestMethod]
+    public void ConfirmSentence_SentenceIsEqual_True()
+    {
+      
+    }
   }
 }
