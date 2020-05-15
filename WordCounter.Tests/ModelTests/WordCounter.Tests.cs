@@ -41,7 +41,19 @@ namespace WordCounter.Tests
       // Act
       bool result = testCheck.WordConfirmation();
       // Assert
-      Assert.IsTrue(false, "Ogre");
+      Assert.IsTrue(result);
+    }
+
+    [TestMethod]
+    public void ConfirmWord_WordIsEqual_False()
+    {
+      // Arrange
+      string freshWord = "1337";
+      RepeatCounter testCheck = new RepeatCounter(freshWord, "confirm");
+      // Act
+      bool result = testCheck.WordConfirmation();
+      // Assert
+      Assert.IsFalse(true, "1337"); 
     }
   }
 }
