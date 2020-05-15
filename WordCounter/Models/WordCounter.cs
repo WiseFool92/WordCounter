@@ -23,11 +23,8 @@ namespace WordCounter.Models
         {
           return false;
         }
-        else
-        {
-          return true;
-        }
       }
+      return true;      
     }
   }
 }
