@@ -46,10 +46,14 @@ namespace WordCounter.Models
 
     public int WordCount()
     {
+      string[] sentenceArray = Sentence.Split();
       int count = 0;
-      if (Word == Sentence)
+      foreach (string wurd in sentenceArray)
       {
-        count += 1;
+        if (wurd.Contains(Word))
+        {
+          count += 1;
+        }
       }
       return count;
     }

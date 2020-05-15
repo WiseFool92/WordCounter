@@ -17,14 +17,14 @@ namespace WordCounter
       while(play == true)
       {
         Console.WriteLine("Welcome to Word Counter!");
-        Console.WriteLine("We will be counting the number of of times your chosen word appears in your chosen sentence.");
+        Console.WriteLine("We will be counting the number of times your chosen word appears in your chosen sentence.");
         Enter:
 
         GetWordCount();
       
         Console.WriteLine("Shall we do another?\n\n[Y/N]");
         string response = (Console.ReadLine().ToLower());
-        
+
         if (response == "y")
         {
           goto Enter;
