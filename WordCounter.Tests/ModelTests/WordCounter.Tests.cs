@@ -31,5 +31,17 @@ namespace WordCounter.Tests
       // Assert
       Assert.AreEqual(freshSentence, result);
     }
+
+    [TestMethod]
+    public void ConfirmWord_WordIsEqual_True()
+    {
+      // Arrange
+      string freshWord = "baselisk";
+      RepeatCounter testCheck = new RepeatCounter(freshWord, "confirm");
+      // Act
+      bool result = testCheck.WordConfirmation();
+      // Assert
+      Assert.IsTrue(false);
+    }
   }
 }
