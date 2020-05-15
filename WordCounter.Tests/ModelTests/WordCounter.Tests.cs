@@ -67,5 +67,17 @@ namespace WordCounter.Tests
       // Assert
       Assert.IsTrue(true, "Oil slicks the road"); 
     }
+
+    [TestMethod]
+    public void ConfirmSentence_SentenceIsEqual_False()
+    {
+      // Arrange
+      string freshSentence = "The gr3as3r gawk3d";
+      RepeatCounter testCheck = new RepeatCounter("confirm", freshSentence);
+      // Act
+      bool result = testCheck.SentenceConfirmation();
+      // Assert
+      Assert.IsFalse(result);
+    }
   }
 }
